@@ -18,7 +18,15 @@ git的逻辑：没有消息就是好消息，没有返回内容即表示成功
 git remote add origin git@github.com:jinhaizeng/git-learning.git
 ```
 git@github.com:jinhaizeng/git-learning.git这个内容在github仓库的ssh中直接能看到
+
 3. 关联后，使用命令`git push -u origin master`第一次推送master分支的所有内容；
 4. 此后，每次本地提交后，只要有必要，就可以使用命令`git push origin master`推送最新修改；
 ## 3.2本地库和远程库的授权问题
 [本地库和远程库的授权问题](https://blog.csdn.net/jingtingfengguo/article/details/51892864)
+
+## 3.3add一次添加多个文件的问题
+
+`git add -A`表示添加所有内容
+`git add .` 提交被修改的和新建的文件，但不包括被删除的文件
+`git add -u`表示添加编辑或者删除的文件，不包括新添加的文件
+
